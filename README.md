@@ -15,7 +15,7 @@ New Feed Selection - which tests to make sure new content is loaded after the in
 
 In order to use these Jasmine test suites, you need to do the following:
 
-1. Go to https://morwick8/feedreader and clone the git repository.
+1. Go to https://github.com/morwick8/feedreader and clone the git repository.
 2. The RSS Feed Reader website can be accessed by opening the "index.html" file in your browser.
 3. You can see which Jasmine tests have been run and their results by scrolling to the bottom of the "index.html" page or by opening the "specrunner.html" file in your browser.
 4. To modify or add additional tests, you can edit the "jasmine/spec/feedreader.js" file.
