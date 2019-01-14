@@ -58,20 +58,15 @@ $(function() {
       });
 
 /*      Slide menu appears when hamburger icon is clicked
- *       meaning the body's menu is not hidden.
+ *       meaning the body's menu is not hidden, then when clicked again
+ *       becomes hidden
  */
-      it('slide-menu appears when hamburger icon is clicked', function() {
+      it('slide-menu appearance toggles when hamburger icon is clicked', function() {
         $('.menu-icon-link').click();
         expect($('body').hasClass('menu-hidden')).not.toBe(true);
-      });
-
-/*     Slide menu appears when hamburger icon is clicked once, and gets hidden
- *      again on the second click, meaning the body's menu is hidden.
- */
-      it('slide-menu appears/disappears when hamburger icon is clicked twice', function() {
-        $('.menu-icon-link').click();
         $('.menu-icon-link').click();
         expect($('body').hasClass('menu-hidden')).toBe(true);
+
       });
 
     }); /* This is the end of The Menu test suite. */
